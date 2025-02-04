@@ -1,0 +1,159 @@
+/* General styles for the entire page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Styling the body */
+body {
+  min-height: 100vh;
+  background-color: rgb(108, 118, 126);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styling the heading */
+h1 {
+  margin: 20px 0;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Styling the form */
+#resumeForm {
+  padding: 10px;
+  margin: 0 10px;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(210, 210, 210);
+  border: 3px solid rgb(108, 118, 126);
+  border-radius: 10px;
+  box-shadow: 0 0 50px hsl(144, 33%, 97%);
+}
+
+/* Styling the fieldset */
+fieldset {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 0 50px hsl(160, 3%, 81%);
+}
+
+/* Styling the legend */
+legend {
+  color: #333;
+  font-weight: bold;
+}
+
+/* General styling for labels and input fields */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid rgb(83, 81, 81);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Button styling */
+button[type="submit"] {
+  padding: 10px 10px;
+  margin-top: 10px;
+  margin-left: 25%;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(108, 118, 126);
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+  background-color: #8f8f8f;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  #resumeForm {
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    width: 50%;
+  }
+}
+
+/* Styling the output section */
+#output {
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  display: none;
+  background-color: rgb(210, 210, 210);
+  border-radius: 10px;
+  border: 3px solid rgb(108, 118, 126);
+  box-shadow: 0 0 50px hsl(160, 50%, 98%);
+}
+
+/* Styling the heading inside the output section */
+#output h2 {
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Styling the div inside the output section */
+#output div {
+  margin-bottom: 15px;
+}
+
+/* Styling the strong elements inside divs in the output section */
+#output div strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styling h3 elements inside the output section */
+#output h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling the profile picture in the output section */
+#output img.profile-Picture {
+  height: 150px;
+  width: 150px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  border: 2px solid rgb(108, 118, 126);
+  box-shadow: 0 4px 8px white;
+  border-radius: 50%;
+  object-fit: cover;
+}
